@@ -5,11 +5,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AlertModule } from 'ngx-bootstrap/alert'; 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

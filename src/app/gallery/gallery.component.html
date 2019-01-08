@@ -1,3 +1,16 @@
-<p>
-  gallery works!
-</p>
+<h2>
+  {{title}}
+</h2>
+<div class="row">
+  <button class="bt btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
+  <button class="bt btn-lg btn-info" [class.active]="filterBy=='boats'" (click)="filterBy='Boats'">Boats</button>
+  <button class="bt btn-lg btn-info" [class.active]="filterBy=='camping'" (click)="filterBy='Camping'">Camping</button>
+  <button class="bt btn-lg btn-info" [class.active]="filterBy=='library'" (click)="filterBy='Library'">Library</button>
+  <ul id="thumbnailsList">
+    <li *ngFor="let image of (visibleImages | imageFilter:filterBy)">
+      <a [routerLink]="['/image',image.id]">
+        <img src="{{image.url}}" alt="" class="tn" width="200" height="160">
+      </a>
+    </li>
+  </ul>
+</div>

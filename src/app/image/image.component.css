@@ -5,7 +5,8 @@
     width: 450px;
     background-position: center;
     background-repeat: no-repeat;
-    align-content: center;
+    display: block;
+    margin: 0 auto;
 }
 
 #caption{
@@ -15,5 +16,8 @@
     color: #222;
     border: 1px solid #bbb;
     width: 900px;
+}
+.caption-row{
+    padding: 24px;
     text-align: center;
 }

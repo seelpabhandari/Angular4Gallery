@@ -26,6 +26,6 @@ const IMAGES = [
   { "id": 8, "category": "Camping", "caption": "view for a boat", "url": "assets/img/img_09.jpg" },
   { "id": 9, "category": "Camping", "caption": "view for a boat", "url": "assets/img/img_10.jpg" },
   { "id": 10, "category": "Camping", "caption": "view for a boat", "url": "assets/img/img_11.jpg" },
-  { "id": 11, "category": "library", "caption": "view for a boat", "url": "assets/img/img_12.jpg" },
+  { "id": 11, "category": "Library", "caption": "view for a boat", "url": "assets/img/img_12.jpg" },
   { "id": 12, "category": "Library", "caption": "view for a boat", "url": "assets/img/img_13.jpg" }
 ]

@@ -10,7 +10,7 @@ export class ImageService {
   }
 
   getImage(id: number) {
-    return IMAGES.slice(0).find(Image => Image.id == id);
+    return IMAGES.slice(0).find(Image => Image.id == id)
   }
 }
 

@@ -11,6 +11,7 @@ import { ImageService } from './image/shared/image.service';
 import { ImageFilterPipe } from './image/shared/filter.pipe';
 import {appRoutes} from '../routes';
 import { RouterModule } from '../../node_modules/@angular/router';
+import { CrudComponent } from './crud/crud.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RouterModule } from '../../node_modules/@angular/router';
     NavbarComponent,
     GalleryComponent,
     ImageComponent,
-    ImageFilterPipe
+    ImageFilterPipe,
+    CrudComponent
   ],
   imports: [
     BrowserModule,

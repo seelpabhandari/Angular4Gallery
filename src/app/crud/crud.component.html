@@ -1,22 +1,54 @@
 <div class="productList">
-  <table class="table table-stripedj">
+  <table class="table table-bordered table-striped table-hover">
     <thead>
       <tr width='100%'>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price</th>
-        <th>Add/Del</th>
+        <th class="text-center">Id</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">Description</th>
+        <th class="text-center">Price</th>
+        <th class="text-center">Add/Del</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+      <tr *ngFor='let product of allProducts'>
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.price}}</td>
+        <td>
+          <button class="btn btn-info">
+            <i class="fa fa-edit"></i>
+          </button>
+          <button class="btn btn-danger">
+            <i class="fa fa-minus"></i>
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>
 </div>
+<br/>
+<br>
+<form>
+  <h2>Product Details</h2>
+  <p>ID:
+    <Input type="text" name="id">
+  </p>
+  <p>Name:
+    <Input type="text" name="name">
+  </p>
+  <p>Description:
+    <Input type="text" name="description">
+  </p>
+  <p>Price:
+    <Input type="text" name="price">
+  </p>
+  <p>
+    <button type="button" class="btn btn-primary">
+      Submit
+    </button>
+    <button type="button" class="btn btn-warning">
+      Cancel
+    </button>
+  </p>
+</form>
